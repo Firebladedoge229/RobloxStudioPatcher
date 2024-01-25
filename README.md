@@ -1,5 +1,5 @@
 
-![Roblox Studio Patcher Logo](https://raw.githubusercontent.com/Firebladedoge229/RobloxStudioPatcher/main/logo.png?token=GHSAT0AAAAAACFQ43TG76KCPO2NXLXDDFEAZNSUFCQ)
+![Roblox Studio Patcher Logo](https://github.com/Firebladedoge229/RobloxStudioPatcher/blob/main/logo.png?raw=true)
 
 
 # Roblox Studio Patcher
