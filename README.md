@@ -19,6 +19,8 @@ Multiple tools within one python file to make the Roblox Studio experience bette
 
 ## Installation
 
+Before you run, make sure to edit the config file to change your settings!
+
 ```bash
   pip3.10 install requirements.txt
   python3.10 patcher.py
