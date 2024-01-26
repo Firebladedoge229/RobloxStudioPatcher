@@ -29,7 +29,8 @@ Before you run, make sure to edit the config file to change your settings!
 ```
 ### Method 2 \[Executuable]
 
-Edit robloxstudiopatcherconfig.json to your liking
+Edit robloxstudiopatcherconfig.json to your liking\n
+
 Run Roblox Studio Patcher
 
 ## Authors
