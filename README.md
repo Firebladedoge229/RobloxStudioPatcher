@@ -21,13 +21,13 @@ Multiple tools within one python file to make the Roblox Studio experience bette
 
 Before you run, make sure to edit the config file to change your settings!
 
-## Method 1 \[Python File]
+### Method 1 \[Python File]
 
 ```bash
   pip3.10 install requirements.txt
   python3.10 patcher.py
 ```
-## Method 2 \[Executuable]
+### Method 2 \[Executuable]
 
 Edit robloxstudiopatcherconfig.json to your liking
 Run Roblox Studio Patcher
