@@ -23,6 +23,8 @@ Before you run, make sure to edit the config file to change your settings!
 
 ### Method 1 \[Python File]
 
+Make sure to edit the settings in the python file before running
+
 ```bash
   pip3.10 install requirements.txt
   python3.10 patcher.py
