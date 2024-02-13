@@ -17,11 +17,11 @@ log_all = False # Logs everything, True or False, takes up a lot of space
 code_assist = False # Roblox Code Assist, True or False
 disable_telemetry = True # Disables most of Roblox's Telemetry when True
 rainbow_ui = False # I don't know why you would want this but it makes some Roblox UI rainbow
+force_high_graphics = True # Recently, Roblox has been switching to very low graphics for texture randomly in games. This bypasses that feature, forcing the textures to the highest quality possible
 
 # Define the experimental features or optimizations to enable
 flags = {
     "FFlagDebugGraphicsPreferD3D11": "true", # directx 11 usage
-    "DFFlagDisableDPIScale": "true", # low quality fix
     "DFIntTaskSchedulerTargetFps": int(max_fps) # max fps
 }
 
@@ -107,6 +107,11 @@ if disable_telemetry == True:
 
 if rainbow_ui == True:
     flags["FFlagDebugDisplayUnthemedInstances"] = "true"
+
+if force_high_graphics == True:
+    flags["DFFlagDisableDPIScale"] = "true"
+    flags["FIntTextureCompositorLowResFactor"] = 4
+    flags["DFFlagEnableRequestAsyncCompression"] = "false"
 
 # Specify the path to the Roblox version directory
 versions_dir = os.path.join(os.environ['LOCALAPPDATA'], 'Roblox', 'Versions')
