@@ -22,11 +22,11 @@ log_all = config.get("log_all", False)
 code_assist = config.get("code_assist", False)
 disable_telemetry = config.get("disable_telemetry", True)
 rainbow_ui = config.get("rainbow_ui", False)
+rainbow_ui = config.get("force_high_graphics", True)
 
 # Define the experimental features or optimizations to enable
 flags = {
     "FFlagDebugGraphicsPreferD3D11": "true",  # directx 11 usage
-    "DFFlagDisableDPIScale": "true",  # low-quality fix
     "DFIntTaskSchedulerTargetFps": int(max_fps)  # max fps
 }
 
@@ -112,6 +112,11 @@ if disable_telemetry == True:
 
 if rainbow_ui == True:
     flags["FFlagDebugDisplayUnthemedInstances"] = "true"
+
+if force_high_graphics == True:
+    flags["DFFlagDisableDPIScale"] = "true"
+    flags["FIntTextureCompositorLowResFactor"] = 4
+    flags["DFFlagEnableRequestAsyncCompression"] = "false"
 
 # Specify the path to the Roblox version directory
 versions_dir = os.path.join(os.environ['LOCALAPPDATA'], 'Roblox', 'Versions')
