@@ -171,20 +171,20 @@ if selected_version is not None:
         exe_path = os.path.join(selected_version, 'RobloxStudioBeta.exe')
         with open(exe_path, 'r+b') as f:
             content = f.read()
-            index = content.find(b"\x00\x00\x00\x74\x05\xE8\xD0")
+            index = content.find(b"\x00\x00\x00\x74\x05\xE8")
             while index != -1:
                 f.seek(index)
-                f.write(b"\x00\x00\x00\x90\x90\xE8\xD0")
-                index = content.find(b"\x00\x00\x00\x74\x05\xE8\xD0", index + 1)
+                f.write(b"\x00\x00\x00\x90\x90\xE8")
+                index = content.find(b"\x00\x00\x00\x74\x05\xE8", index + 1)
     elif enable_internal == False:
         exe_path = os.path.join(selected_version, 'RobloxStudioBeta.exe')
         with open(exe_path, 'r+b') as f:
             content = f.read()
-            index = content.find(b"\x00\x00\x00\x90\x90\xE8\xD0")
+            index = content.find(b"\x00\x00\x00\x90\x90\xE8")
             while index != -1:
                 f.seek(index)
-                f.write(b"\x00\x00\x00\x74\x05\xE8\xD0")
-                index = content.find(b"\x00\x00\x00\x90\x90\xE8\xD0", index + 1)
+                f.write(b"\x00\x00\x00\x74\x05\xE8")
+                index = content.find(b"\x00\x00\x00\x90\x90\xE8", index + 1)
     
 else:
     print("No version with RobloxStudioBeta.exe found.")
