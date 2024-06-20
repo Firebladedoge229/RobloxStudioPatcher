@@ -1,8 +1,9 @@
-
 ![Roblox Studio Patcher Logo](https://github.com/Firebladedoge229/RobloxStudioPatcher/blob/main/logo.png?raw=true)
 
-
 # Roblox Studio Patcher
+
+> [!CAUTION]
+> This repository is no longer maintained. Navigate to [Roblox Studio Manager](https://github.com/Firebladedoge229/RobloxStudioManager) for an updated fork.
 
 Multiple tools within one python file to make the Roblox Studio experience better.
 
